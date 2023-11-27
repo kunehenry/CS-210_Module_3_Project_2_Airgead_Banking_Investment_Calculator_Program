@@ -1,0 +1,52 @@
+Dat Nguyen
+CS-210
+Module 5
+Project Two
+Airgead Banking Investment Application Pseudocode
+
+
+1. Start Program
+
+2. Define a class named InvestmentCalculator
+   - Private Members:
+     a. initialInvestmentAmount (double)
+     b. monthlyDepositAmount (double)
+     c. annualInterestRate (double)
+     d. numberOfYears (int)
+     e. growthWithoutDeposit (data structure to store year-end balance and interest without deposit)
+     f. growthWithDeposit (data structure to store year-end balance and interest with deposit)
+   - Public Methods:
+     a. setInitialInvestmentAmount(double amount)
+     b. setMonthlyDepositAmount(double amount)
+     c. setAnnualInterestRate(double rate)
+     d. setNumberOfYears(int years)
+     e. calculateInvestmentGrowthWithoutMonthlyDeposits()
+     f. calculateInvestmentGrowthWithMonthlyDeposits()
+     g. displayInvestmentReports()
+
+3. In the main function:
+   a. Instantiate an object of InvestmentCalculator
+   b. Display initial investment screen to the user:
+      - Prompt user for initial investment amount
+      - Prompt user for monthly deposit amount
+      - Prompt user for annual interest rate
+      - Prompt user for number of years
+      - Wait for the user to press a key to continue
+   c. Set user inputs to the InvestmentCalculator object using setter methods
+   d. Call calculateInvestmentGrowthWithoutMonthlyDeposits method
+   e. Call calculateInvestmentGrowthWithMonthlyDeposits method
+   f. Call displayInvestmentReports method to show the investment growth reports
+
+4. In the InvestmentCalculator class:
+   - Method calculateInvestmentGrowthWithoutMonthlyDeposits:
+     a. Calculate the investment growth for each year over the number of years without considering monthly deposits
+     b. Store the year-end balance and interest results in growthWithoutDeposit
+   - Method calculateInvestmentGrowthWithMonthlyDeposits:
+     a. Calculate the investment growth for each year over the number of years, including monthly deposits
+     b. Store the year-end balance and interest results in growthWithDeposit
+   - Method displayInvestmentReports:
+     a. Display the report for investment growth without monthly deposits
+     b. Display the report for investment growth with monthly deposits
+     c. Format the reports for clarity and readability
+
+5. End Program
